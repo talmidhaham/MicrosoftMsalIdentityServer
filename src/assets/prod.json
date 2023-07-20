@@ -1,0 +1,20 @@
+{
+    "Url":"sdafsddf",
+    "Url2":"asdasdasd",
+    "AuthSettings":
+    {
+        "issuer": "https://login.microsoftonline.com/aa640f10-95f8-4f05-96f1-529dbbc11897/v2.0",
+        "clientId": "857c489c-40e2-4fc5-b4cf-c9733e71b0d0",
+        "responseType": "code",
+        "redirectUri":  "/",
+        "scope": "openid profile email offline_access api://3b65ade9-e833-4248-a9c7-cfa866e9ebc6/read",
+        "useSilentRefresh": true,
+        "silentRefreshTimeout": 5000,
+        "timeoutFactor": 0.25, 
+        "sessionChecksEnabled": true,
+        "showDebugInformation": true, 
+        "clearHashAfterLogin": false,
+        "nonceStateSeparator" : "semicolon",
+        "strictDiscoveryDocumentValidation": false
+    }
+}

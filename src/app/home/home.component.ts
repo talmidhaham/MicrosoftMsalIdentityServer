@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MsalBroadcastService, MsalService } from '@azure/msal-angular';
 import { EventMessage, EventType, AuthenticationResult } from '@azure/msal-browser';
+import { TlvReadJsonConfLibService } from '@tlv-infrastructure/tlv-read-json-conf-lib';
 import { filter } from 'rxjs/operators';
+import { ISettings } from '../Core/ICommon';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +13,12 @@ import { filter } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
   loginDisplay = false;
 
-  constructor(private authService: MsalService, private msalBroadcastService: MsalBroadcastService) { }
+  constructor(private authService: MsalService, private msalBroadcastService: MsalBroadcastService) { 
+
+    // let appset = serv.JsonFile as ISettings
+    // console.log('appset' + appset.AuthSettings)
+
+  }
 
   ngOnInit(): void {
     this.msalBroadcastService.msalSubject$
